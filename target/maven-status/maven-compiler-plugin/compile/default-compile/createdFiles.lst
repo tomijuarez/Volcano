@@ -1,0 +1,10 @@
+com/upgrade/volcano/repository/BookingRepository.class
+com/upgrade/volcano/resources/BookingResourceResponse$CustomResponse.class
+com/upgrade/volcano/resources/ConflictException.class
+com/upgrade/volcano/resources/InternalServerErrorExceptionController.class
+com/upgrade/volcano/resources/InternalServerErrorException.class
+com/upgrade/volcano/resources/ConflictExceptionController.class
+com/upgrade/volcano/resources/BookingResource.class
+com/upgrade/volcano/resources/BookingResourceResponse.class
+com/upgrade/volcano/repository/Booking.class
+com/upgrade/volcano/VolcanoApplication.class

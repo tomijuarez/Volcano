@@ -1,0 +1,14 @@
+version: '2.2'
+services:
+  volcano:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: volcano-api
+    ports:
+      - 8080:8080
+    networks:
+      - network1
+
+networks:
+  network1:
