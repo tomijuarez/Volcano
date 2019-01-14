@@ -19,6 +19,8 @@ Note that the Dockerfile does not create the jar file, since that is not a good 
 
 If you want to delete the `./target` folder, you need to run `mvn clean package` first and then run the previous commands.
 
+This application uses JPA + H2 (in-memory database because its simplicity), spring-boot and mockito. 12 unit tests are available in this project.
+
 By default, I've setted the configuration to map the docker port to your local port `8080`. You can reach the API at `http://localhost:8080/booking`. Note that the root '/' doesn't do anything, since I wanted to give to the booking resource an specific URI, starting at `/booking` for semantic reasons. You can apply several methods to this resource, which are listed below.
 
 **NOTE**: all responses have the same format: `{ error: ..., payload: ... }`. If the system returns an error status code, then `error` will have some error message and `payload` will be `null`. If the system process the request succesfully, `payload` *may* have some content, and error will be `null`.
